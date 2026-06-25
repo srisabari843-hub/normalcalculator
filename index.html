@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
     <title>NormalCalculator</title>
 </head>
+
 <body>
     <div class="container">
         <div class="calculator">
@@ -14,36 +16,38 @@
              <input type="text" name="display" value="00">
               </div>
              <div>
-                <input type="button" value="AC">
-                <input type="button"  value="DEL">
-                <input type="button" value=".">
-                <input type="button" value="/">
+
+                <input type="button" value="AC" onclick="clearDisplay()" class="operator">
+                <input type="button"  value="DEL" onclick="deletevalue()" class="operator">
+                <input type="button" value="." onclick="appendvalue('.')" class="operator">
+                <input type="button" value="/" onclick="appendvalue('/')" class="operator">
              </div>
              <div>
-                <input type="button" value="7">
-                <input type="button"  value="8">
-                <input type="button" value="9">
-                <input type="button" value="X">
+                <input type="button" value="7" onclick="appendvalue('7')">
+                <input type="button"  value="8"  onclick="appendvalue('8')">
+                <input type="button" value="9"  onclick="appendvalue('9')">
+                <input type="button" value="X"  onclick="appendvalue('*')" class="operator">
              </div>
              <div>
-                <input type="button" value="4">
-                <input type="button"  value="5">
-                <input type="button" value="6">
-                <input type="button" value="-">
+                <input type="button" value="4"  onclick="appendvalue('4')">
+                <input type="button"  value="5"  onclick="appendvalue('5')">
+                <input type="button" value="6"  onclick="appendvalue('6')">
+                <input type="button" value="-"  onclick="appendvalue('-')" class="operator">
              </div>
-             <div>
-                <input type="button" value="1">
-                <input type="button"  value="2">
-                <input type="button" value="3">
-                <input type="button" value="+">
+             <div> 
+                <input type="button" value="1"  onclick="appendvalue('1')">
+                <input type="button"  value="2"  onclick="appendvalue('2')">
+                <input type="button" value="3"  onclick="appendvalue('3')">
+                <input type="button" value="+"  onclick="appendvalue('+')" class="operator">
              </div>
                <div>
-                <input type="button" value="00">
-                <input type="button"  value="0">
-                <input type="button" value="=" class="equal">
+                <input type="button" value="00"  onclick="appendvalue('00')">
+                <input type="button"  value="0"  onclick="appendvalue('0')">
+                <input type="button" value="=" class="equal"  onclick="calculate()" class="operator">
              </div>
             </form>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
