@@ -1,63 +1,38 @@
-# 🧮 Normal Calculator
+Normal calculator
+ this is simple calculator project used html,css,js . I built 
+this project to practise javascript function,DOM manipulation,and event handling.it can perform basic arithmetic calculations like  addition,subration,multiplication,and division with simple and clear user interface.
 
-A simple and responsive calculator built using **HTML, CSS, and JavaScript**.  
-This project performs basic arithmetic operations with a clean UI and interactive button-based input.
+Features
+  perform basic calculations easily
+  support decimal values
+  AC button to clear everything 
+  DEL btton to remove one character
+  error handling for invalid inputs
+  dark themed modern UI
 
----
-
-## 🚀 Features
-
-- Basic arithmetic operations (+, −, ×, ÷)
-- Clear (AC) and Delete (DEL) functionality
-- Supports decimal numbers
-- Handles invalid input safely
-- Clean dark-themed UI with button effects
-- Responsive centered layout
-
----
-
-## 🛠️ Tech Stack
-
-- HTML5
-- CSS3
-- JavaScript (ES6)
-
----
-
-## 📸 Preview
-
-(Add your screenshot here)
+Technologies Used
+    HTML for structure
+    Css for styling and layout
+    javascript for functionality
 
 
-
----
-
-## ⚙️ How It Works
-
-- Buttons update the display using JavaScript functions
-- `appendvalue()` adds numbers/operators
-- `clearDisplay()` resets the calculator
-- `deletevalue()` removes last character
-- `calculate()` evaluates expression using `eval()`
-- Input is validated to avoid invalid characters
-
----
-
-## 📂 Project Structure
+projct purpose
+   the main purpose of this project is to improvemy understanding of java script logic and how calculators work in real time , it helped me to learn about handling user inuts ,update display values, and evaluating  expressions
 
 
-calculator/
-│── index.html
-│── style.css
-│── script.js
-│── README.md
+   How it works
+      The calculator works by taking button inputs and display them on the screen,java scrit handles each button click and update the display.When the Equal(=) button is pressed, it calculates the result and show it instantly.
 
+     folder structure
+       Normal calculator
+          index.html
+          style.css
+          scipt.js
+          README.md
 
----
-
-## 🔒 Safety Feature
-
-The calculator checks input using regex:
-
-```js
-/[^0-9+\-*/.]/.test(display.value)
+    Future Improvements 
+       add keybord support
+       Improve UI animations
+       Add scientific Calculator Functions
+       Store Calculation History
+  
